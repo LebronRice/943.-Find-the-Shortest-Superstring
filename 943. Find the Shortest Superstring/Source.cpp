@@ -48,7 +48,7 @@ public:
 			int prev_node = path[cur_node][end_state];
 			end_state &= ~(1 << cur_node);
 			cur_node = prev_node;
-		}
+		} 
 		cur_node = final_path.back(); 
 		string res = A[cur_node];
 		for (int i = n - 2; i >= 0; --i) {
